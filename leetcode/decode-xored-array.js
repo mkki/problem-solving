@@ -3,16 +3,16 @@
  * @param {number} first
  * @return {number[]}
  */
-var decode = function(encoded, first) {
-    const decoded = [];
+var decode = function (encoded, first) {
+  const decoded = [];
 
-    decoded.push(first);
+  decoded.push(first);
 
-    for (let i = 0; i < encoded.length; i++) {
-        const decodedNumber = encoded[i] ^ decoded[i];
+  for (let i = 0; i < encoded.length; i++) {
+    const decodedNumber = encoded[i] ^ decoded[i];
 
-        decoded.push(decodedNumber);
-    }
+    decoded.push(decodedNumber);
+  }
 
-    return decoded;
+  return decoded;
 };
